@@ -101,7 +101,7 @@ BERT (Bidirectional Encoder Representations from Transformers) is a deep learnin
 The BERT model achieved an outstanding accuracy of 99%, the highest among all models evaluated. It performed exceptionally well across both classes, with almost perfect precision, recall, and F1 scores.
 The results indicate that BERT rarely misclassifies reviews, regardless of their sentiment.
 The confusion matrix and ROC curve confirm this performance, with only a few misclassified instances and an AUC close to 1.0.
-
+![BERT Confusion Matrix](https://github.com/ArpitaRandive/sentiment-analysis/blob/main/assets/BERT%20Confusion%20Matrix.png)
 The reason why BERT outperforms the other models is due to the following reasons:
  - As suggested by its name, BERT reads text from both directions, enabling better contextual understanding.
  - It’s pre-trained on large text corpora, giving it strong language understanding before fine-tuning.
