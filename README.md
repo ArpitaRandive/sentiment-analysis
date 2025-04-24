@@ -36,6 +36,9 @@ The model gives an outstanding performance with an accuracy of 98%.
 Both classes achieved equally high precision, recall, and F1-scores, indicating that the model is rarely making any mistakes, whether the class is positive or negative, and it is also balanced, which indicates it is not biased towards one class.
 Overall, we can conclude that the model is reliable and consistent.
 
+![LR Confusion Matrix](https://github.com/ArpitaRandive/sentiment-analysis/blob/main/assets/LR%20Confusion%20Matrix.png)
+![LR roc](https://github.com/ArpitaRandive/sentiment-analysis/blob/main/assets/LR%20roc.png)
+
 To assess the model’s performance, a confusion matrix and ROC curve were generated for validation. The results of the confusion matrix depicts that out of 424 total samples, only 8 has been misclassified, indicating a balanced performance across classes, whereas the ROC curve shows the overall accuracy of the model.
 
 ## Random Forest 
@@ -52,6 +55,9 @@ Random Forest creates an ensemble of multiple decision trees to reach a singular
 The Random Forest model shows an overall accuracy of 96%.
 It shows high precision, recall, F1-scores and accuracy, indicating that it performed well across both classes but sacrifices some interpretability for better handling of nonlinear patterns (compared to logistic regression).
 
+![RF Confusion Matrix](https://github.com/ArpitaRandive/sentiment-analysis/blob/main/assets/Rf%20Confusion%20Matrix.png)
+![RF roc](https://github.com/ArpitaRandive/sentiment-analysis/blob/main/assets/RF%20roc.png)
+
 The confusion matrix and ROC curve confirm the performance of the model, with only 17 samples misclassified.
 
 ## Support Vector Machine (SVM)
@@ -66,7 +72,10 @@ Following are the performance metrics of the model:
 | **Weighted avg** | 0.99   | 0.99   | 0.99     | 424     |
 
 The SVM model achieved an impressive accuracy of 99% , outperforming most of the other models. Both precision and recall are nearly perfect, especially for class 1 (positive sentiment), indicating that the model was highly effective in correctly classifying both sentiment classes.
+
 The confusion matrix and ROC curve confirm this strong performance.
+![SVM Confusion Matrix](https://github.com/ArpitaRandive/sentiment-analysis/blob/main/assets/SVM%20Confusion%20Matrix.png)
+![SVM roc](https://github.com/ArpitaRandive/sentiment-analysis/blob/main/assets/SVM%20roc.png)
 
 
 ## Recurring Neural Network - RNN(LSTM)
@@ -82,6 +91,10 @@ The RNN model was built using embedding layers instead of TF-IDF, enabling it to
 | **Weighted avg** | 0.88   | 0.87   | 0.86     | 424     |
 
 The model shows a decent accuracy of 87% which, even though is lower as compared to the other models, still performs well in capturing the temporal dependencies. It especially performed well for class 1, with higher recall and F1 scores, indicating its ability to correctly identify positive sentiments.
+
+![RNN Confusion Matrix](https://github.com/ArpitaRandive/sentiment-analysis/blob/main/assets/RNN%20Confusion%20Matrix.png)
+![RNN roc](https://github.com/ArpitaRandive/sentiment-analysis/blob/main/assets/RNN%20roc.png)
+
 The confusion matrix and ROC curve reveal areas where the RNN struggled slightly more with distinguishing between negative and positive sentiments, particularly for class 0. 
 
 Overall, the model showcases the potential of deep learning approaches in text analysis tasks
@@ -101,7 +114,10 @@ BERT (Bidirectional Encoder Representations from Transformers) is a deep learnin
 The BERT model achieved an outstanding accuracy of 99%, the highest among all models evaluated. It performed exceptionally well across both classes, with almost perfect precision, recall, and F1 scores.
 The results indicate that BERT rarely misclassifies reviews, regardless of their sentiment.
 The confusion matrix and ROC curve confirm this performance, with only a few misclassified instances and an AUC close to 1.0.
-![BERT Confusion Matrix](https://github.com/ArpitaRandive/sentiment-analysis/blob/main/assets/BERT%20Confusion%20Matrix.png)
+
+![Bert Confusion matrix](https://github.com/ArpitaRandive/sentiment-analysis/blob/main/assets/BERT%20Confusion%20Matrix.png)
+![BERT roc](https://github.com/ArpitaRandive/sentiment-analysis/blob/main/assets/BERT%20roc.png)
+
 The reason why BERT outperforms the other models is due to the following reasons:
  - As suggested by its name, BERT reads text from both directions, enabling better contextual understanding.
  - It’s pre-trained on large text corpora, giving it strong language understanding before fine-tuning.
